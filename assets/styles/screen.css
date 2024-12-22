@@ -4,7 +4,7 @@
   initial-value: 0deg;
 }
 body {
-  background-color: rgb(38, 34, 35);
+  background-color: rgb(0, 18, 25);
 }
 
 .inner-glow {
@@ -34,7 +34,7 @@ body {
   z-index: -1;
   inset: -1em;
   border: solid 1.25em;
-  border-image: conic-gradient(from var(--inner-glow-rotation), rgb(140, 2, 66), rgb(139, 84, 216), rgb(216, 103, 4), rgb(165, 46, 3)) 1;
+  border-image: conic-gradient(from var(--inner-glow-rotation), rgb(0, 95, 115), rgb(10, 147, 150), rgb(10, 147, 150), rgb(148, 210, 189), rgb(148, 210, 189), rgb(233, 216, 166), rgb(233, 216, 166), rgb(238, 155, 0), rgb(238, 155, 0), rgb(202, 103, 2), rgb(202, 103, 2), rgb(187, 62, 3), rgb(187, 62, 3), rgb(174, 32, 18), rgb(174, 32, 18), rgb(155, 34, 38), rgb(155, 34, 38), rgb(0, 95, 115)) 1;
   filter: blur(0.75em);
   animation: inner-glow-rotation 4s linear infinite;
   content: "";

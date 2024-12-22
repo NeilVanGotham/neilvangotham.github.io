@@ -1,10 +1,15 @@
 @use "sass:math";
 
-$color-background: 38 34 35;
-$color-1: 140 2 66;
-$color-2: 139 84 216;
-$color-3: 216 103 4;
-$color-4: 165 46 3;
+$color-background: 0 18 25;
+$color-1: 0 95 115;
+$color-2: 10 147 150;
+$color-3: 148 210 189;
+$color-4: 233 216 166;
+$color-5: 238 155 0;
+$color-6: 202 103 2;
+$color-7: 187 62 3;
+$color-8: 174 32 18;
+$color-9: 155 34 38;
 
 @property --inner-glow-rotation {
   syntax: "<angle>";
@@ -47,12 +52,27 @@ body {
       inset: -1em;
       border: solid 1.25em;
       border-image: conic-gradient(
-        from var(--inner-glow-rotation),
-        rgb($color-1),
-        rgb($color-2),
-        rgb($color-3),
-        rgb($color-4)
-      ) 1;
+          from var(--inner-glow-rotation),
+          rgb($color-1),
+          rgb($color-2),
+          rgb($color-2),
+          rgb($color-3),
+          rgb($color-3),
+          rgb($color-4),
+          rgb($color-4),
+          rgb($color-5),
+          rgb($color-5),
+          rgb($color-6),
+          rgb($color-6),
+          rgb($color-7),
+          rgb($color-7),
+          rgb($color-8),
+          rgb($color-8),
+          rgb($color-9),
+          rgb($color-9),
+          rgb($color-1)
+        )
+        1;
       filter: blur(0.75em);
       animation: inner-glow-rotation 4s linear infinite;
       content: "";
