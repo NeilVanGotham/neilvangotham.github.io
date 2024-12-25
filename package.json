@@ -9,6 +9,11 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.1.1"
+    "astro": "^5.1.1",
+    "sass": "^1.83.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "sass-embedded": "^1.83.0"
   }
 }
