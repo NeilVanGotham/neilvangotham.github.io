@@ -1,5 +1,4 @@
 ---
-import InnerGlowBox from "../components/InnerGlowBox.astro";
 import Title from "../components/Title.astro";
 import Layout from "../layouts/Layout.astro";
 
@@ -8,24 +7,5 @@ const websiteTitle = import.meta.env.PUBLIC_WEBSITE_TITLE;
 
 <Layout>
   <Title title={websiteTitle} />
-  <InnerGlowBox />
+  <!-- <InnerGlowBox /> -->
 </Layout>
-
-<style lang="scss" is:global>
-  body {
-    font-family: "Source Sans 3", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4 {
-    font-family: "Oswald", serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-  }
-</style>
