@@ -20,7 +20,7 @@ jobs:
     steps:
       - name: Use variables
         run: |
-          echo $PUBLIC_WEBSITE_TITLE
+          echo "$PUBLIC_WEBSITE_TITLE"
         env: 
           PUBLIC_WEBSITE_TITLE: ${{ vars.PUBLIC_WEBSITE_TITLE }}
       - name: Checkout your repository using git
