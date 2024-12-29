@@ -18,6 +18,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Use variables
+        run: |
+          echo ${{ vars.PUBLIC_WEBSITE_TITLE }}
+        env: 
+          PUBLIC_WEBSITE_TITLE: ${{ vars.PUBLIC_WEBSITE_TITLE }}
       - name: Checkout your repository using git
         uses: actions/checkout@v4
       - name: Install, build, and upload your site
