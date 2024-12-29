@@ -14,6 +14,9 @@ permissions:
   pages: write
   id-token: write
 
+env:
+  PUBLIC_WEBSITE_TITLE: ${{ vars.PUBLIC_WEBSITE_TITLE }}
+
 jobs:
   build:
     runs-on: ubuntu-latest
